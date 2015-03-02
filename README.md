@@ -1,5 +1,5 @@
-ob.cs.hm.edu
+terraform.cs.hm.edu
 ============
 
-Website ob.cs.hm.edu
+Website terraform.cs.hm.edu
 

@@ -31,14 +31,7 @@ main = hakyll $ do
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
             >>= relativizeUrls
 
-    match "misc/*" $ do
-        route   $ setExtension "html"
-        compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/misc.html" defaultContext
-            >>= loadAndApplyTemplate "templates/default.html" defaultContext
-            >>= relativizeUrls
-
-    match (fromList ["index.html","about.html","impressum.html"]) $ do
+    match (fromList ["index.html","impressum.html"]) $ do
         route idRoute
         compile $ getResourceBody
             >>= loadAndApplyTemplate "templates/default.html" defaultContext

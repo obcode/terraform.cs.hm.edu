@@ -5,7 +5,7 @@ import Development.Shake.Util
 import System.Directory (createDirectoryIfMissing)
 import Control.Monad (forM_)
 
-uploadHost = "ob.cs.hm.edu"
+uploadHost = "terraform.cs.hm.edu"
 uploadDir  = "www"
 
 main :: IO ()
